@@ -1,7 +1,7 @@
 # SQL_Covid19_Data_Exploration
-SQL Data Exploration project analyzing global COVID-19 data using MySQL
+SQL Data Exploration analyzing global COVID-19 data using MySQL
 
-# SQL Data Exploration Project-COVID-19 Dataset
+# SQL Data Exploration-COVID-19 Dataset
 
 ## 📌 Project Overview
 This project focuses on exploring and analyzing COVID-19 data using **MySQL**.  
