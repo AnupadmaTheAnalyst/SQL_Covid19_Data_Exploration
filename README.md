@@ -1,11 +1,19 @@
-# SQL_Covid19_Data_Exploration
-SQL Data Exploration analyzing global COVID-19 data using MySQL
-
-# SQL Data Exploration-COVID-19 Dataset
+# COVID-19 Impact & Vaccination Analysis using SQL
 
 ## 📌 Project Overview
-This project focuses on exploring and analyzing COVID-19 data using **MySQL**.  
-The goal is to practice SQL querying techniques while uncovering insights about global infection and vaccination trends.
+This project analyzes global COVID-19 case, death, and vaccination data using SQL to understand the **impact of the pandemic on populations** and to support **data-driven decision-making**.
+
+The analysis focuses on tracking infection trends, mortality risk, and vaccination progress across countries and continents.  
+Such insights are critical for **public policy planning, healthcare capacity management, and resource allocation**.
+
+---
+
+## 🎯 Business & Analytical Objectives
+- Monitor COVID-19 spread and mortality trends across regions
+- Identify countries with high infection and death rates relative to population
+- Compare pandemic impact across continents
+- Track vaccination rollout progress over time
+- Support strategic decisions for healthcare planning and intervention prioritization
 
 ---
 
@@ -17,37 +25,67 @@ The goal is to practice SQL querying techniques while uncovering insights about 
 
 ---
 
-## 📊 Key SQL Tasks
+## 🔍 Analysis Performed
 
-### 1. Data Preparation
-- Cleaned dataset (set empty `continent` values to NULL)
-- Verified data types and table structures using `SHOW TABLES` and `SHOW COLUMNS`
+### 1️⃣ Pandemic Impact Analysis
+- Total cases vs total deaths
+- Mortality rate calculation by country
+- Percentage of population infected
+- Countries with highest infection and death counts
 
-### 2. Data Exploration Queries
-- **Total Cases vs Total Deaths:** Calculated death percentages by country.  
-- **Total Cases vs Population:** Determined infection rates by population.  
-- **Highest Infection Rate:** Found countries with the highest infection ratio.  
-- **Highest Death Count:** Listed countries and continents with the largest total deaths.  
-- **Global Numbers:** Computed global totals for cases, deaths, and death percentage.
+### 2️⃣ Regional & Global Comparison
+- Continent-level death analysis
+- Global case and death aggregation
+- Cross-country comparison for risk identification
 
-### 3. Advanced Analysis
-- **Joins:** Combined death and vaccination tables.  
-- **CTE (Common Table Expression):** Calculated cumulative vaccination count per country.  
-- **Temporary Table:** Stored rolling vaccination data for further exploration.  
-- **View Creation:** Created a view `PercentPopulationVaccinated` for easy future visualization.
-
----
-
-## 📈 Example Insights
-- Some countries show over **30% population infection rate**.  
-- Vaccination trends vary widely by continent.  
-- Global death rate (deaths/cases) provides insight into pandemic severity.  
+### 3️⃣ Vaccination Progress Tracking
+- Rolling vaccination totals using window functions
+- Vaccinated population percentage by country
+- Time-series analysis of vaccination adoption
 
 ---
 
-## 🌟 Key Takeaways
-This project demonstrates:
-- Strong understanding of **SQL fundamentals** and **data exploration techniques**.  
-- Ability to handle **real-world datasets** (85k+ rows).  
-- Skills in **data cleaning, joining, and aggregation**essential for data analyst roles.
+## 📊 Key Insights
+- A small number of countries experienced disproportionately high infection and death rates relative to population.
+- Mortality risk varied significantly across regions, highlighting differences in healthcare capacity and response.
+- Vaccination rollout speed differed widely between countries, impacting population-level protection.
+- Rolling vaccination metrics provide better visibility into program effectiveness than daily numbers.
+
+---
+
+## 💼 Business & Policy Impact
+- Helps governments and healthcare organizations identify **high-risk regions**
+- Supports **resource allocation** and vaccination prioritization
+- Enables **executive-level reporting** on pandemic status
+- Assists analysts in tracking **program effectiveness over time**
+
+---
+
+## 🚀 How to Run the Project
+1. Import the datasets into a SQL database.
+2. Create tables for `coviddeaths` and `covidvaccinations`.
+3. Execute the SQL queries sequentially.
+4. Use the created views for further reporting or visualization.
+
+---
+
+## 🧠 Learnings & Skills Demonstrated
+- Translating real-world problems into SQL queries
+- Time-series analysis using window functions
+- Using CTEs for clean, reusable logic
+- Building analytical views for downstream reporting
+- Presenting analytical insights with business relevance
+
+---
+
+## 📌 Project Classification
+**Category:** Impact & Policy Analytics  
+**Skill Level:** Beginner to Intermediate SQL  
+**Industry Relevance:** Healthcare Analytics, Consulting, Public Sector Analysis
+
+---
+
+## 📎 Note
+This project focuses on **impact analysis and decision support**, not revenue or sales analytics.  
+It demonstrates strong SQL fundamentals and analytical thinking applicable across multiple industries.
 
